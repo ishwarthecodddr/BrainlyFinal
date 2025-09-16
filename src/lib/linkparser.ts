@@ -8,7 +8,7 @@ export interface ParsedLink {
 const YOUTUBE_REGEX = /^(https?:\/\/)?(www\.)?(youtube\.com|youtu\.be)\/.+$/i;
 const TWITTER_REGEX = /^(https?:\/\/)?(www\.)?twitter\.com\/.+$/i;
 const LINKEDIN_REGEX = /^(https?:\/\/)?(www\.)?linkedin\.com\/.+$/i;
-    
+        
 export function parseLink(url: string): ParsedLink {
     let type: LinkType = 'unknown';
     if (YOUTUBE_REGEX.test(url)) {

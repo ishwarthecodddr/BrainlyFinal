@@ -31,13 +31,13 @@ const LinkCard = () => {
                         />
 
                         {/* Centered modal */}
-                        <div className="flex flex-col fixed inset-0 z-50 items-center justify-center">
+                        <div className="flex flex-col fixed inset-0 z-50 pointer-events-none     items-center justify-center">
                             <div
                                 role="dialog"
                                 aria-modal="true"
                                 aria-labelledby="add-link-title"
                                 onMouseDown={(e) => e.stopPropagation()}
-                                className="w-[min(90vw,28rem)] rounded-lg bg-slate-300/70 p-4 shadow-lg dark:bg-neutral-900"
+                                className="w-[min(90vw,28rem)] rounded-lg bg-slate-300/70 p-4 shadow-lg dark:bg-neutral-900 pointer-events-auto"
                             >
                                 <h2 id="add-link-title" className="mb-3 text-lg font-semibold">
                                     Add a link

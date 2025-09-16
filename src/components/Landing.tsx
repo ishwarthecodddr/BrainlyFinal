@@ -4,9 +4,9 @@ const Landing = () => {
     return (
         <>
             <div className="text-xl  h-14 flex justify-center items-center gap-10">
-                <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
-                    <Bookmark className="w-5 h-5 text-white" />
-                </div>
+               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg flex items-center justify-center">
+                <Bookmark className="w-5 h-5 text-white" />
+              </div>
                 <span className="mr-200">Brainly</span>
                 <nav className="flex gap-10">
                     <a className="hover:cursor-pointer hover:text-blue-400">
