@@ -4,7 +4,7 @@ import { type LinkDoc } from '@/lib/utils';
 import { getLink } from '@/lib/utils'
 import { ModeToggle } from './Mode-toggle';
 import { Bookmark } from 'lucide-react';
-
+import { ToastContainer } from "react-toastify"
 const Dashboard = () => {
   const [links, setLinks] = useState<LinkDoc[]>([]);
 
@@ -29,7 +29,7 @@ const Dashboard = () => {
             </div>
             <span className="font-semibold tracking-wide">Brainly</span>
           </div>
-
+          <ToastContainer />
           <nav className="flex items-center gap-4">
             <ModeToggle />
             <a
