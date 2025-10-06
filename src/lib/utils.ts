@@ -1,4 +1,4 @@
-import { app } from "@/firebase";
+import { app } from "../firebase";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
