@@ -5,19 +5,25 @@ const Landing = () => {
     return (
         <>
             {/* Top nav */}
-            <header className="sticky top-0 z-10 border-b border-white/10 bg-black/30 backdrop-blur">
-                <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 text-white">
+            <header className="sticky top-0 z-10 border-b backdrop-blur
+                    bg-white/70 border-slate-900/10
+                    dark:bg-black/30 dark:border-white/10">
+                <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4
+                  text-slate-900 dark:text-white">
                     <div className="flex items-center gap-3 select-none">
                         <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg grid place-items-center">
                             <Bookmark className="w-5 h-5 text-white" />
                         </div>
                         <span className="font-semibold tracking-wide">Brainly</span>
                     </div>
-                    <nav className="hidden sm:flex items-center gap-8 text-sm text-white/80">
-                        <a className="hover:text-white" href="#">Home</a>
-                        <a className="hover:text-white" href="#features">Features</a>
-                        <a className="hover:text-white" href="/dashboard">Dashboard</a>
+
+                    <nav className="hidden sm:flex items-center gap-8 text-sm
+                    text-slate-600 dark:text-white/80">
+                        <a className="hover:text-slate-900 dark:hover:text-white" href="#">Home</a>
+                        <a className="hover:text-slate-900 dark:hover:text-white" href="#features">Features</a>
+                        <a className="hover:text-slate-900 dark:hover:text-white" href="/dashboard">Dashboard</a>
                     </nav>
+
                     <ModeToggle />
                 </div>
             </header>
